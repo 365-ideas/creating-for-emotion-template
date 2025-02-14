@@ -1,11 +1,11 @@
 import { Logo } from '@/components/Logo/Logo'
 import React from 'react'
-import s from "./HomePage.module.scss"
+import "./HomePage.scss"
 
 export default function HomePage() {
   return (
-    <div className={s.home}>
-      <Logo className={s.logo}/>
+    <div className="home">
+      <Logo color='white' className="logo"/>
       For the community. Human community
     </div>
   )

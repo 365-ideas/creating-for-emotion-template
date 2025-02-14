@@ -1,3 +1,5 @@
+import { ease } from "./ease";
+
 export const anim = (variants) => {
   return {
     initial: "initial",

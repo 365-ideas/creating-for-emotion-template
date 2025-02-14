@@ -4,11 +4,11 @@ import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 
-export const Logo = ({...rest}) => {
+export const Logo = ({color="black", ...rest}) => {
   return (
     <motion.div {...rest}>
       <Image
-        src="/images/FullLogo.svg"
+        src={`/images/FullLogo-${color}.svg`}
         fill
         alt="logo"
         style={{ objectFit: 'contain' }}
@@ -17,11 +17,11 @@ export const Logo = ({...rest}) => {
   )
 }
 
-export const LogoSmall = ({...rest}) => {
+export const LogoSmall = ({color="black", ...rest}) => {
   return (
     <motion.div {...rest}>
       <Image
-        src="/images/OneLogo.svg"
+        src={`/images/OneLogo-${color}.svg`}
         fill
         alt="logo"
         style={{ objectFit: 'contain' }}
